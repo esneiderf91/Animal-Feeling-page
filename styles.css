@@ -1,0 +1,79 @@
+.just-another-hand-regular {
+    font-family: "Just Another Hand", cursive;
+    font-style: normal;
+  }
+  
+
+body {
+    font-family: "Just Another Hand", sans-serif;
+    font-size:xx-large;
+    letter-spacing: 0.2rem;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #0571d3;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #0571d3;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.section {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    color: #0571d3;
+}
+
+.products, .experiences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product, .experience {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 20px);
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #0571d3;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 5px 0;
+}
