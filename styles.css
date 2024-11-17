@@ -63,6 +63,41 @@ nav a:hover {
     margin: auto;
 }
 
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    flex: 1 1 calc(50% - 20px);
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    color: white;
+    background-color: #0571d3;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #004a99;
+}
+
 .section {
     padding: 1.25rem 0; 
     border-bottom: 0.0625rem solid #ddd; 
