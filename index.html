@@ -3,114 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Feeling</title>
+    <title>Animal Feeling - Inicio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
 
 <header>
-    <img src="" alt="Logo animal feeling">
+    <img src="ruta_a_tu_logo.png" alt="Logo animal feeling">
     <h1>Animal Feeling</h1>
-    <p>Connect with their nature</p>
+    <button class="menu-btn" id="menu-btn">
+        <i class="fas fa-bars"></i>
+    </button>
 </header>
 
-<nav>
+<nav id="hamburger-menu" class="hamburger-menu">
     <a href="#experiences">Experiencias</a>
     <a href="tienda.html">Tienda</a>
     <a href="#contact">Contacto</a>
+    <a href="#sign-in" id="sign-in-btn">Login</a>
 </nav>
 
-<div class="container">
-    <section id="experiences" class="section">
-        <h2>Experiencias y Usos</h2>
-        <div class="experiences">
-            <div class="experience">
-                <img src="" alt="Imagén referente a la experiencia">
-                <h3>Experiencia 1</h3>
-                <p>Descripción de cómo el arnés ha ayudado a un cliente.</p>
-            </div>
-            <div class="experience">
-                <img src="" alt="Imagén referente a la experiencia">
-                <h3>Experiencia 2</h3>
-                <p>Descripción de cómo la cama elevada ha beneficiado a un perro.</p>
-            </div>
-            <div class="experience">
-                <img src="" alt="Imagén referente a la experiencia">
-                <h3>Experiencia 3</h3>
-                <p>Descripción de otra experiencia positiva con los productos.</p>
-            </div>
-        </div>
+<main>
+    <section id="hero">
+        <img src="ruta_a_tu_imagen_principal.jpg" alt="Imagen principal">
     </section>
-
-    <section id="shop-preview" class="section">
-        <h2>Tienda</h2>
-        <div class="products">
-            <div class="product">
-                <img src="" alt="Imagén de referencia de arnés">
-                <h3>Arnés</h3>
-                <p>Descripción del arnés y sus beneficios.</p>
-                <label for="arnes-color">Color:</label>
-                <select id="arnes-color">
-                    <option value="gris">Gris</option>
-                    <option value="azul">Azul Cielo</option>
-                    <option value="blanco">Blanco</option>
-                </select>
-                <label for="arnes-talla">Talla:</label>
-                <select id="arnes-talla">
-                    <option value="pequeño">Pequeño</option>
-                    <option value="mediano">Mediano</option>
-                    <option value="grande">Grande</option>
-                </select>
-                <a href="tienda.html" class="btn">Ver Más</a>
-            </div>
-            <div class="product">
-                <img src="" alt="Imagén de referencia de de la cama elevada">
-                <h3>Cama Elevada</h3>
-                <p>Descripción de la cama elevada y sus beneficios.</p>
-                <label for="cama-color">Color:</label>
-                <select id="cama-color">
-                    <option value="gris">Gris</option>
-                    <option value="azul">Azul Cielo</option>
-                    <option value="blanco">Blanco</option>
-                </select>
-                <label for="cama-talla">Talla:</label>
-                <select id="cama-talla">
-                    <option value="pequeño">Pequeño</option>
-                    <option value="mediano">Mediano</option>
-                    <option value="grande">Grande</option>
-                </select>
-                <a href="tienda.html" class="btn">Ver Más</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <h2>Contacto</h2>
-        <ul class="contact-info">
-            <section id="contact" class="section">
-                <ul class="contact-info">
-                    <li><i class="fab fa-instagram social-icon"></i> <a href="https://instagram.com/anml.feeling">@anml.feeling</a></li>
-                    <li><i class="fas fa-envelope social-icon"></i> <a href="mailto:anml.feeling@gmail.com">anml.feeling@gmail.com</a></li>
-                    <li><i class="fas fa-phone-alt social-icon"></i> 3006507127</li>
-                    <li><i class="fab fa-whatsapp social-icon"></i> <a href="https://wa.me/3006507127" target="_blank">WhatsApp</a></li>
-                </ul>
-            </section>
-    <section id="Politics-preview" class="section">  
-        </ul>
-        <h3>Políticas de Envío y Devolución</h3>
-        <p>Envío: 5-10 días hábiles dependiendo de la ciudad y disponibilidad del transportador. El costo del envío se paga en el momento de la entrega.</p>
-        <p>Devoluciones: El comprador se hace cargo del costo de envío para la devolución. El producto debe estar nuevo y se debe proporcionar un video al momento de hacer el desempacado, adicionalmente una explicación del motivo de la devolución y la experiencia de compra.</p>
-    </section>
-</div>
+</main>
 
 <footer>
     <p>&copy; 2024 Animal Feeling. Todos los derechos reservados.</p>
 </footer>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const signInBtn = document.getElementById('sign-in-btn');
+
+    menuBtn.addEventListener('click', () => {
+        hamburgerMenu.classList.toggle('open');
+    });
+
+    signInBtn.addEventListener('click', () => {
+        window.location.href = 'signin.html';
+    });
+</script>
 
 </body>
 </html>
